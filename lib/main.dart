@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/auth/login.dart';
+import 'package:flutter_app/screens/home_screen.dart';
+import 'package:flutter_app/screens/navigation_screen.dart';
+import 'package:flutter_app/screens/onBoarding.dart';
 import 'package:flutter_app/screens/splash_screen.dart';
 
 void main() {
@@ -14,12 +18,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primaryColor: Colors.purple,
+      theme: ThemeData(primaryColor: Colors.blue,
 
           // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           // useMaterial3: true,
           ),
-      home: SplashScreen(),
+      home: NavigationScreen(),
     );
   }
 }
