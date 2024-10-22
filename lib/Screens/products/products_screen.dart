@@ -1,5 +1,6 @@
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/widgets/product_details.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class ProductsScreen extends StatelessWidget {
@@ -122,20 +123,24 @@ class ProductsScreen extends StatelessWidget {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      // color: Color(0xffef6969),
+                      // color: Color(0xff5a4949),
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Center(
                       child: ElevatedButton(
-                          onPressed: () {},
+                          onPressed: () {
+
+                          },
                           child: Icon(
                             Icons.shopping_cart,
                             color: Colors.red,
                           )),
                     ),
-                  )
+                  ),
+                  ProductDetailPopup(),
+
                 ],
-              )
+              ),
             ],
           ),
         )),

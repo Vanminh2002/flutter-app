@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/auth/forgot_screen.dart';
 import 'package:flutter_app/screens/auth/register_screen.dart';
+import 'package:flutter_app/screens/home_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -74,7 +75,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 30,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                      },
                       child: Text(
                         'Login',
                         style: TextStyle(fontSize: 15, color: Colors.white),

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/auth/login.dart';
 import 'package:flutter_app/screens/auth/register_screen.dart';
+import 'package:flutter_app/screens/navigation_screen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -92,22 +93,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         suffixIcon: Icon(Icons.remove_red_eye),
                       ),
                     ),
-                    // Align(
-                    //   alignment: Alignment.topRight,
-                    //   child: TextButton(
-                    //     onPressed: () {},
-                    //     child: Text(
-                    //       'Forgot Password?',
-                    //       style: TextStyle(
-                    //           fontWeight: FontWeight.w600, fontSize: 14),
-                    //     ),
-                    //   ),
-                    // ),
+
                     SizedBox(
                       height: 30,
                     ),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () { Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => NavigationScreen()));},
                       child: Text(
                         'Create',
                         style: TextStyle(fontSize: 15, color: Colors.white),
